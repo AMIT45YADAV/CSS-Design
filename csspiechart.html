@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center{
+            width:calc(100vw - 40vw);
+            height:calc(100vh - 30vh);
+            position: relative;
+            border: 1px solid #000;
+            position: relative;
+            box-shadow:0 2.8px 2.2px rgba(0,0,0,0.034),
+                        0 6.7px 5.3px rgba(0,0,0,0.048),
+                        0 12.5px 10px rgba(0,0,0,0.06),
+                        0 22.3px 17.9px rgba(0,0,0,0.072),
+                        0 41.8px 33.4px rgba(0,0,0,0.086),
+                        0 100px 80px rgba(0,0,0,0.12);
+        }
+        .center h1{
+            padding: 20px 0px 20px 20px;
+        }
+        .center p{
+            position: absolute;
+            bottom: 1rem;
+            right:1rem;
+            font-size: 1.1rem;
+            text-align: right;
+        }
+        .center span ::after{
+            content: '';
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            font-weight: 700;
+            background: currentColor;
+            margin: 0 0.5rem;
+        }
+        .center h3{
+            position: absolute;
+            padding: 1rem;
+            bottom: 0;
+            color:grey;
+            font-style: italic;
+        }
+        .piechart{
+            background: radial-gradient();
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+            <h1>India Top 5 States with Highest Corona cases</h1>
+            <h3>India Corona Virus Cases Till Now</h3>
+            <div class="piechart">
+                <p>
+                    Gujarat 23456 <span style="color:orange;"></span><br>
+                    Mumbai 34567<span style="color:rgba(241, 129, 187, 0.677) ;"></span><br>
+                    Bihar 23445<span style="color:rgb(85, 0, 255);"></span><br>
+                    Rajasthan 45669<span style="color:rgb(16, 250, 246);"></span><br>
+                    Delhi 23450<span style="color:rgb(0, 255, 85);"></span><br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

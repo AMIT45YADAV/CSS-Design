@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: consolas;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background:#111;
+        }
+        .scan{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .scan .fingerprint{
+            position: relative;
+            width:300px;
+            height:380px;
+            background:url(image/finger1.jpeg);
+            background-size: 300px;
+
+        }
+        .scan .fingerprint ::before{
+            content: '';
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url();
+            background-size: 300px;
+            
+        }
+
+    </style>
+
+    
+</head>
+<body>
+    <div class="scan">
+        <div class="fingerprint"></div>
+        <h3>Scaning...</h3>
+    </div>
+</body>
+</html>

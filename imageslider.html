@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image slider</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0ch;
+        }
+        body{
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:rgb(33,32,32);
+        }
+        .slider{
+            position: relative;
+            width:53%;
+            overflow: hidden;
+        }
+        .image{
+            display: flex;
+            width: 100%;
+        }
+        .image img{
+            height: 550px;
+            width:100%;
+            transition: all 0.5s ease-in-out;
+        }
+        .image input{
+            display: none;
+        } 
+        .dots{
+            display: flex;
+            justify-content: center;
+            margin: 6px;
+
+        }
+        .dots label{
+            margin: 5px;
+            height: 22px;
+            width: 22px;
+            border-radius:50%;
+            border: 3px solid #fff;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        .dots label:hover{
+            background: #fff;
+        }
+        #img1:checked ~ .image1{
+            margin-left: 0;
+        }
+
+        #img2:checked ~ .image2{
+            margin-left: -100%;
+        }
+
+        #img3:checked ~ .image3{
+            margin-left: -200%;
+        }
+
+        #img4:checked ~ .image4{
+            margin-left: 0;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="slider">
+        <div class="image">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2" checked>
+            <input type="radio" name="slide" id="img3" checked>
+            <input type="radio" name="slide" id="img4" checked>
+             
+            
+             <img  src="image/2.jpg" alt="image1">
+            <img  src="image/3.jpg" alt="image2">
+            <img  src="image/4.jpg" alt="image3">
+            <img src="image/Amit.jpg" alt="image4">
+        </div>
+        <div class="dots">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+            <label for="img4"></label>
+        </div>
+    </div>
+</body>
+</html>
